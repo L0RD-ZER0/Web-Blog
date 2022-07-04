@@ -7,8 +7,11 @@
   "author": "L0RD-ZER0",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "mongoose": "^6.4.0",
     "passport": "^0.6.0",
     "passport-discord": "^0.1.4",
@@ -18,9 +21,11 @@
     "passport-patreon": "^1.0.1"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.13",
-    "@types/mongoose": "^5.11.97",
+    "@types/express-session": "^1.17.4",
     "@types/node": "^18.0.0",
+    "@types/passport": "^1.0.9",
     "nodemon": "^2.0.18",
     "typescript": "^4.7.4"
   }
