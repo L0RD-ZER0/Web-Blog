@@ -1,4 +1,10 @@
 import app from './app';
+import * as dotenv from 'dotenv';
+
+dotenv.config({
+    override: true
+})
+
 
 if (process.env.NODE_ENV === 'development')  {
     /* Development */

@@ -1,6 +1,9 @@
 import * as mongoose from "mongoose";
 
-
-mongoose.connect("DB-URI")
-    .then(() => console.log("Mongoose Conneted!"))
-    .catch((reason) => { console.log(`Error: ${reason}`); });
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
+        console.log("Mongoose Conneted!");
+    })
+    .catch((reason) => {
+        console.log(`Error: ${reason}`);
+    });
